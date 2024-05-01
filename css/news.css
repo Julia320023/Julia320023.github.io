@@ -1,11 +1,6 @@
 :root {
     --font-family-Lusi: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --bg-color: rgba(101, 88, 64);
-    --bg-color-orange: rgba(101, 88, 64);
-    --bg-color-lightpink: rgba(101, 88, 64, 0.8);
-    --bg-color-yellowgreen: #f5ceb2;
-    --bg-color-purple: rgba(114, 103, 83, 0.8);
-    a{color: rgb(95, 209, 241);}
+
     
 }
 [data-theme="dark"] {
@@ -17,6 +12,14 @@
     a{color: #deff73;}
     p{color: #eef9c5;}
     h1{color: #fbff88;}
+}
+[data-theme="link"] {
+    --bg-color: rgba(101, 88, 64, 0.95);
+    --bg-color-orange: rgba(101, 88, 64);
+    --bg-color-lightpink: rgba(101, 88, 64, 0.8);
+    --bg-color-yellowgreen: rgba(231, 204, 180);
+    --bg-color-purple: rgba(114, 103, 83, 0.8);
+    a{color: rgb(238, 171, 116);}
 }
 @media (width >= 1200px){
     body{
@@ -31,38 +34,54 @@
         float:left;
         margin: 7px 7px 7px 0;
     }
+    .sign{
+        float:inline-start;
+    }
+    img{
+        float:none;
+        margin: 10px 10px 10px 10px;
+    }
+    
+    .picture{
+        text-align: center;
+    }
+    
+    h1, h2, h3, p, ul, li{
+        font-family: var(--font-family-Lusi);
+        margin: 10px 20px 10px 20px;
+    }
     h1{
-        font-family: var(--font-family-Lusi);
+        text-align: center;
     }
-    p{
+    h2, h3{
+        margin-left: 30px;
+    }
+    /*{
         overflow: hidden;
-        font-size: 25px;
+        font-size: 20px;
         font-family: var(--font-family-Lusi);
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 10%;
-    }
+        
+    }*/
 
     .logo{
         background-color: var(--bg-color-orange);
-        height: 100px;
+        height: 80px;
         grid-column-start: 1;
         grid-column-end: 3;
     }
     .menu {
         background-color: var(--bg-color-purple);
-        height: 100px;
+        height: 80px;
         grid-column-start: 3;
         grid-column-end: 9;
     }
     .content {
         background-color: var(--bg-color-yellowgreen);
-        height: 550px;
-        grid-column-start: 1;
-        grid-column-end: 9;
+        /*height: 550px;*/
+        grid-column-start: 2;
+        grid-column-end: 8;
     }
     .basement {
-        height: 100px;
         grid-column-start: 1;
         grid-column-end: 9;
         background-color: var(--bg-color-lightpink);
@@ -81,38 +100,42 @@
     .container{
        
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    h1{
-        font-family: var(--font-family-Lusi);
+    .log{
+        float:left;
+        margin: 7px 7px 7px 0;
     }
-    p{
-        overflow: hidden;
-        font-size: 30px;
+    img{
+        float:none;
+        margin: 10px 10px 10px 10px;
+    }
+    h1, h2, h3, p, ul, li{
         font-family: var(--font-family-Lusi);
-        margin-top: 10%;
-        margin-left: 10%;
+        margin: 10px 10px 10px 10px;
     }
     .logo {
         background-color: var(--bg-color-orange);
-        height: 150px;
+        height: 80px;
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 2;
     }
     .menu {
         background-color: var(--bg-color-purple);
-        min-height: 300px;
-        grid-column-start: 1;
-        grid-column-end: 3;
+        min-height: 80px;
+        grid-column-start: 2;
+        grid-column-end: 4;
     }
     
     .content {
         background-color: var(--bg-color-yellowgreen);
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
     
     .basement {
         background-color: var(--bg-color-lightpink);
-        height: 150px;
+        /*height: 80px;*/
         grid-column-start: 1;
         grid-column-end: 3;
     }
@@ -128,31 +151,30 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-    h1{
-        font-family: var(--font-family-Lusi);
+    .log{
+        float:left;
+        margin: 7px 7px 7px 0;
     }
-    p{
-        overflow: hidden;
-        font-size: 30px;
+    img{
+        float:none;
+        margin: 10px 10px 10px 10px;
+    }
+    h1, h2, h3, p, ul, li{
         font-family: var(--font-family-Lusi);
-        margin-top: 10%;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 10%;
+        margin: 10px 10px 10px 10px;
     }
     .menu {
         background-color: var(--bg-color-purple);
-        min-height: 300px;
+        min-height: 80px;
         
     }
     .logo {
         background-color: var(--bg-color-orange);
-        min-height: 100px;
+        min-height: 80px;
         
     }
     .basement {
         background-color: var(--bg-color-lightpink);
-        height: 250px;
     }
     .content {
         background-color: var(--bg-color-yellowgreen);
