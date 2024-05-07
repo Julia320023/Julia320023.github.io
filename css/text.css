@@ -1,0 +1,107 @@
+:root {
+    --font-family-Lusi: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    
+}
+
+
+@media (width >= 1300px){
+
+    .logo img{
+        float: left;
+        margin: 7px 0px 7px 10;
+    }
+    .sign{
+        float: inline-start;
+    }
+    img{
+        float:none;
+        margin: 10px 10px 10px 10px;
+    }
+    .logo h1{
+        margin-top: 5%;
+    }
+    .menu p{
+        margin-top: 2%;
+    }
+    h1, h2, h3, p, ul, li{
+        font-family: var(--font-family-Lusi);
+        margin: 10px 20px 10px 20px;
+    }
+    h1{
+        text-align: center;
+    }
+    h2, h3{
+        margin-left: 30px;
+    }
+    
+}
+
+
+
+
+@media (width < 1300px) and (width >= 960px){
+    .logo img{
+        float: left;
+        margin: 7px 0px 7px 10;
+    }
+    .sign{
+        float: inline-start;
+    }
+    img{
+        float:none;
+        margin: 10px 10px 10px 10px;
+    }
+    .logo h1{
+        margin-top: 5%;
+    }
+    .menu p{
+        margin-top: 2%;
+    }
+    h1, h2, h3, p, ul, li{
+        font-family: var(--font-family-Lusi);
+        margin: 10px 20px 10px 20px;
+    }
+    h1{
+        text-align: center;
+    }
+    h2, h3{
+        margin-left: 30px;
+    }
+    
+}
+
+@media (width < 960px){
+    .logo img{
+        float: left;
+        margin: 7px 0px 7px 10;
+    }
+    .log{
+        width: 60;
+    }
+    .sign{
+        float: inline-start;
+    }
+    img{
+        float:none;
+        margin: 10px 10px 10px 10px;
+        
+    }
+    .logo h1{
+        margin-top: 5%;
+    }
+    .menu p{
+        margin-top: 2%;
+    }
+    h1, h2, h3, p, ul, li{
+        font-family: var(--font-family-Lusi);
+        margin: 10px 20px 10px 20px;
+    }
+    h1{
+        text-align: center;
+    }
+    h2, h3{
+        margin-left: 30px;
+    }
+    
+}
