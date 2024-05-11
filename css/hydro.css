@@ -1,0 +1,24 @@
+:root{
+    --bg--image: url(../images/background/фон_гидро_день.webp);
+    --bg-color: rgb(123, 197, 247);
+    --bg-color-orange: rgb(39, 161, 241);
+    --bg-color-purple: rgb(123, 197, 247);
+    --bg-color-yellowgreen: rgba(255, 255, 255, 0.8);
+    --bg-color-lightpink: rgb(39, 161, 241);
+    --bg-color-button: rgb(39, 161, 241);
+    .menu a{color: rgb(0, 0, 0);}
+    .basement a{color: rgb(0, 0, 0);}
+}
+[dark] {
+    --bg--image: url(../images/background/фон_гидро_ночь.jpg);
+    --bg-color: rgb(49, 71, 179);
+    --bg-color-orange: rgb(8, 12, 35);
+    --bg-color-purple: rgb(9, 18, 70);
+    --bg-color-yellowgreen: rgba(8, 12, 35, 0.8);
+    --bg-color-lightpink: rgb(8, 12, 35);
+    --bg-color-button: rgb(8, 12, 35);
+    .menu a{color: rgb(95, 194, 255);}
+    .basement a{color: rgb(95, 194, 255);}
+    p, ul, li{color: rgb(255, 255, 255);}
+    h1, h2, h3, h4{color: rgb(95, 194, 255);}
+}

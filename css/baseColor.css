@@ -1,0 +1,24 @@
+:root{
+    --bg--image: url(../images/background/фон_день.png);
+    /*--bg-color: rgba(101, 88, 64);*/
+    --bg-color-orange: rgb(50, 96, 161);
+    --bg-color-lightpink: rgb(50, 96, 161);
+    --bg-color-yellowgreen: rgb(255, 255, 255, 0.8);
+    --bg-color-purple: rgb(133, 159, 183);
+    --bg-color-button: rgb(50, 96, 161);
+    .menu a{color: rgb(0, 0, 0);}
+    .basement a{color: rgb(0, 0, 0);}
+}
+[dark] {
+    --bg--image: url(../images/background/фон_ночь.png);
+    --bg-color: rgb(33, 21, 67);
+    --bg-color-orange: rgb(5, 18, 46);
+    --bg-color-purple: rgb(6, 31, 87);
+    --bg-color-lightpink: rgb(5, 18, 46);
+    --bg-color-yellowgreen: rgb(5, 18, 46, 0.95);
+    --bg-color-button: rgb(5, 18, 46);
+    .menu a{color: #fdff8f;}
+    .basement a{color: #fdff8f;}
+    p, ul, li{color: #ffffff;}
+    h1, h2, h3, h4{color: #fbff88;}
+}

@@ -1,0 +1,24 @@
+:root{
+    --bg--image: url(../images/background/фон_анемо_день.jpg);
+    --bg-color: rgb(21, 231, 206);
+    --bg-color-orange: rgb(103, 217, 200);
+    --bg-color-purple: rgb(144, 247, 231);
+    --bg-color-yellowgreen: rgba(255, 255, 255, 0.8);
+    --bg-color-lightpink: rgb(103, 217, 200);
+    --bg-color-button: rgb(103, 217, 200);
+    .menu a{color: rgb(0, 0, 0);}
+    .basement a{color: rgb(0, 0, 0);}
+}
+[dark] {
+    --bg--image: url(../images/background/фон_анемо_ночь.jpg);
+    --bg-color: rgb(16, 48, 39);
+    --bg-color-orange: rgb(11, 34, 27);
+    --bg-color-purple: rgb(29, 68, 57);
+    --bg-color-yellowgreen: rgba(11, 34, 27, 0.9);
+    --bg-color-lightpink: rgb(11, 34, 27);
+    --bg-color-button: rgb(11, 34, 27);
+    .menu a{color: rgb(149, 255, 225);}
+    .basement a{color: rgb(149, 255, 225);}
+    p, ul, li{color: rgb(255, 255, 255);}
+    h1, h2, h3, h4{color: rgb(149, 255, 225);}
+}

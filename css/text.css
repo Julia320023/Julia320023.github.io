@@ -7,12 +7,38 @@
 
 @media (width >= 1300px){
 
-    .logo img{
+    .logo img{/*картинка логотипа*/
         float: left;
-        margin: 7px 0px 7px 10;
+        margin: 7px 0px 7px 10px;
     }
-    .sign{
+    .sign{/*расположение картинок регионов и персонажей*/
         float: inline-start;
+        text-align: center;
+    }
+    .sign3{/*расположение картинок персов на личных страницах*/
+        float: inline-start;
+        text-align: left;
+    }
+    .sign3 p img{
+        float: inline-start;
+        text-align: left;
+        shape-outside: url(../images/персонажи/1Рейзор_иконка.webp);
+        shape-margin: 100px;
+    }
+    .sign{/*расположение картинок регионов*/
+        float: inline-start;
+        text-align: center;
+    }
+    .sign2{/*расположение картинок персонажей*/
+        float: inline-start;
+        text-align: center;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .chetireStar, .fiveStar{/*расположение картинок персонажей*/
+        float: left;
     }
     img{
         float:none;
@@ -24,15 +50,25 @@
     .menu p{
         margin-top: 2%;
     }
+    .basement p{
+        margin-top: 0.5%;
+    }
     h1, h2, h3, p, ul, li{
         font-family: var(--font-family-Lusi);
         margin: 10px 20px 10px 20px;
+        text-align: justify;
     }
     h1{
         text-align: center;
     }
     h2, h3{
-        margin-left: 30px;
+        margin-left: 50px;
+    }
+    body p{
+        margin: 0px 100px 0px 100px;
+    }
+    body li, body ul{
+        margin: 0px 60px 0px 60px;
     }
     
 }

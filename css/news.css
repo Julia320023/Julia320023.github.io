@@ -3,59 +3,47 @@
 
     
 }
-[data-theme="light"]{
-    --bg-color: rgba(101, 88, 64);
-    --bg-color-orange: rgba(101, 88, 64);
-    --bg-color-lightpink: rgba(101, 88, 64, 0.8);
-    --bg-color-yellowgreen: rgba(231, 204, 180);
-    --bg-color-purple: rgba(114, 103, 83, 1);
-    a{color: rgb(238, 171, 116);}
-}
-[data-theme="dark"] {
-    --bg-color: rgb(33, 21, 67);
-    --bg-color-orange: rgb(33, 21, 67);
-    --bg-color-purple: rgb(43, 29, 80, 0.5);
-    --bg-color-lightpink: rgba(43, 29, 80, 0.5);
-    --bg-color-yellowgreen: rgb(63, 49, 106);
-    a{color: #deff73;}
-    p, ul, li{color: #eef9c5;}
-    h1, h2, h3, h4{color: #fbff88;}
-}
+
 
 @media (width >= 1300px){
-    body{
-        /*background-color: var(--bg-color);*/
-        background-image: url(../images/фон.jpg);
-        background-size: 100%;
-        /*background-repeat: no-repeat;*/
+    button{
+        background-color: var(--bg-color-button);
+        float: right;
+        margin: -44px 30px 0px 0px;
     }
-    .container{
-        
+    body{
+        background-color: var(--bg-color);/*фоновая картинка, если ее нет, то фоновый цвет*/
+        background-image: var(--bg--image);
+        background-size: 100% ;
+        background-repeat:no-repeat;
+        background-attachment: fixed ;
+    }
+    .container{ 
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: repeat(12, 1fr);/*грид 12 столюиков*/
     }
     
     
     
     .picture{
-        text-align: center;
+        text-align: center;/*размещение картинок в <p> с классом .picture в центре страницы(преимущ. листающиеся слайды)*/
     }
     
     h1, h2, h3, p, ul, li{
-        font-family: var(--font-family-Lusi);
+        font-family: var(--font-family-Lusi);/*шрифт и отступы для всех надписей*/
         margin: 10px 20px 10px 20px;
     }
     h1{
-        text-align: center;
+        text-align: center;/*заголовки h1 в центре*/
     }
     h2, h3{
-        margin-left: 30px;
+        margin-left: 30px;/*отступы в 30рх для заголовком поменьше*/
     }
     
     
     .logo{
-        background-color: var(--bg-color-orange);
-        height: 80px;
+        background-color: var(--bg-color-orange);/*расположение div с логотипом и названием*/
+        height: 76px;
         position: fixed;
         width: 23%;
         position: fixed;
@@ -64,8 +52,8 @@
 
     }
     .menu {
-        background-color: var(--bg-color-purple);
-        height: 80px;
+        background-color: var(--bg-color-purple);/*расположение div с меню*/
+        height: 76px;
         width: 79%;
         position: fixed;
         margin-top: -0.6%;
@@ -74,20 +62,19 @@
     }
 
     .content {
-        background-color: var(--bg-color-yellowgreen);
-        /*height: 550px;*/
-        margin-top: 71px;
+        background-color: var(--bg-color-yellowgreen);/*расположение div с контентом страницы*/
+        margin-top: 66px;
         grid-column-start: 2;
         grid-column-end: 12;
     }
     .basement {
-        grid-column-start: 1;
+        grid-column-start: 1;/*расположение div с сылками на официальные источники*/
         grid-column-end: 13;
         background-color: var(--bg-color-lightpink);
-        margin-bottom: -7px;
+        height: 45px;
+        margin-bottom: -8px;
         margin-left: -8px;
         margin-right: -8px;
-        /*height: 300px;*/
     }
 
     
@@ -97,8 +84,19 @@
 
 
 @media (width < 1300px) and (width >= 960px){
+    button{
+        background-color: var(--bg-color-button);
+        float: right;
+        margin: -44px 10px 0px 0px;
+    }
+
     body{
         background-color: var(--bg-color);
+        background-image: var(--bg--image);
+        background-size: auto 100% ;
+        background-repeat:no-repeat;
+        background-attachment: fixed ;
+        background-position-x: center;
     }
     .container{
        
@@ -154,8 +152,19 @@
 }
 
 @media (width < 960px){
+    button{
+        background-color: var(--bg-color-button);
+        float: right;
+        margin: -44px 10px 0px 0px;
+    }
+
     body{
         background-color: var(--bg-color);
+        background-image: var(--bg--image);
+        background-size: auto 100% ;
+        background-repeat:no-repeat;
+        background-attachment: fixed ;
+        background-position-x: center;
     }
     .container{
         
