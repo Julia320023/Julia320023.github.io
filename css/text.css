@@ -22,8 +22,6 @@
     .sign3 p img{
         float: inline-start;
         text-align: left;
-        shape-outside: url(../images/персонажи/1Рейзор_иконка.webp);
-        shape-margin: 100px;
     }
     .sign{/*расположение картинок регионов*/
         float: inline-start;
@@ -68,7 +66,7 @@
         margin: 0px 100px 0px 100px;
     }
     body li, body ul{
-        margin: 0px 60px 0px 60px;
+        margin: 0px 30px 0px 30px;
     }
     
 }
@@ -79,7 +77,7 @@
 @media (width < 1300px) and (width >= 960px){
     .logo img{
         float: left;
-        margin: 7px 0px 7px 10;
+        margin: 7px 0px 7px 10px;
     }
     .sign{
         float: inline-start;
@@ -110,10 +108,10 @@
 @media (width < 960px){
     .logo img{
         float: left;
-        margin: 7px 0px 7px 10;
+        margin: 7px 0px 7px 10px;
     }
     .log{
-        width: 60;
+        width: 60px;
     }
     .sign{
         float: inline-start;
