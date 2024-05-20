@@ -3,13 +3,15 @@ temaButton.addEventListener("click", darkLightTema);
 let sum = 1;
 
 function darkLightTema() {
+    let element = document.getElementById("log");
     if(sum == 1){
         document.body.setAttribute('dark', '');
         sum = 2;
-        document.getElementById("Dark-light").innerHTML = "День";
+        element.src = "../images/Logo_dark.png";
     }else{
         document.body.removeAttribute('dark');
         sum = 1;
-        document.getElementById("Dark-light").innerHTML = "Ночь";
+        element.src = "../images/Logo_light.png";
+        
     }
 }
