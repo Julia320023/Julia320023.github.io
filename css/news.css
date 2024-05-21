@@ -6,22 +6,35 @@
 
 
 @media (width >= 1300px){
-    button{
-        background-color: var(--bg-color-button);
-        float: right;
-        margin: -44px 30px 0px 0px;
-    }
     body{
         background-color: var(--bg-color);/*фоновая картинка, если ее нет, то фоновый цвет*/
         background-image: var(--bg--image);
         background-size: 100% ;
         background-repeat:no-repeat;
         background-attachment: fixed ;
+        transition: .4s;
     }
     .container{ 
         display: grid;
         grid-template-columns: repeat(12, 1fr);/*грид 12 столюиков*/
     }
+    .stichia{
+        /*position:relative;*/
+        /*width: 82.5%;*/
+        background-color: var(--bg-color-stihia);
+        height: 70px;
+        text-align: center;
+    }
+    .stichia button{
+        height: 40px;
+        width: 100px;
+        margin: 15px 20px 0px 20px;
+        position: relative;
+        border: 0px;
+        border-radius: 10px;
+        background-color: var(--bg-color-purple);
+    }
+
     
     
     
@@ -44,7 +57,6 @@
     .logo{
         background-color: var(--bg-color-orange);/*расположение div с логотипом и названием*/
         height: 76px;
-        position: fixed;
         width: 23%;
         position: fixed;
         margin-top: -0.6%;

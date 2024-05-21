@@ -1,16 +1,14 @@
-let temaButton = document.getElementById("tema");
-temaButton.addEventListener("click", darkLightTema);
-let mode = 'light';
-let element = document.getElementById("log");
+temaButton.addEventListener("click", elementsTema);
+let sum = document.get;
 
-function darkLightTema() {
-    if(mode == 'light'){
-        mode = 'dark';
+function elementsTema() {
+    if(sum == 'light'){
+        sum = 'dark';
         document.body.setAttribute('dark', '');
         element.src = "../images/Logo_dark.png";
         localStorage.setItem('theme', 'dark');
     }else{
-        mode = 'light';
+        sum = 'light';
         document.body.removeAttribute('dark');
         element.src = "../images/Logo_light.png";
         localStorage.removeItem('theme');

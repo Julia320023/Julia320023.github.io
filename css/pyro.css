@@ -6,6 +6,8 @@
     --bg-color-yellowgreen: rgba(255, 255, 255, 0.8);
     --bg-color-lightpink: rgb(199, 22, 13);
     --bg-color-button: rgb(199, 22, 13);
+    --bg-color-text: rgb(0, 0, 0);
+    --bg-color-icon: url(../images/Logo_light.png);
     .menu a{color: rgb(0, 0, 0);}
     .basement a{color: rgb(0, 0, 0);}
 }
@@ -17,6 +19,8 @@
     --bg-color-yellowgreen: rgba(22, 1, 0, 0.9);
     --bg-color-lightpink: rgb(22, 1, 0);
     --bg-color-button: rgb(22, 1, 0);
+    --bg-color-text: rgb(245, 148, 148);
+    --bg-color-icon: url(../images/Logo_dark.png);
     .menu a{color: rgb(245, 148, 148);}
     .basement a{color: rgb(245, 148, 148);}
     p, ul, li{color: #ffffff;}

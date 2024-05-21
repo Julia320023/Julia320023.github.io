@@ -6,17 +6,21 @@
     --bg-color-yellowgreen: rgba(255, 255, 255, 0.8);
     --bg-color-lightpink: rgb(253, 193, 90);
     --bg-color-button: rgb(240, 166, 37);
+    --bg-color-text: #000000;
+    --bg-color-icon: url(../images/Logo_light.png);
     .menu a{color: rgb(0, 0, 0);}
     .basement a{color: rgb(0, 0, 0);}
 }
 [dark] {
     --bg--image: url(../images/background/фон_гео_ночь.png);
-    --bg-color: rgb(36, 21, 5);
-    --bg-color-orange: rgb(36, 21, 5);
-    --bg-color-purple: rgb(66, 38, 9);
-    --bg-color-yellowgreen: rgba(36, 21, 5, 0.8);
-    --bg-color-lightpink: rgb(36, 21, 5);
-    --bg-color-button: rgb(36, 21, 5);
+    --bg-color: rgb(12, 6, 0);
+    --bg-color-orange: rgb(12, 6, 0);
+    --bg-color-purple: rgb(26, 15, 3);
+    --bg-color-yellowgreen: rgba(14, 7, 0, 0.9);
+    --bg-color-lightpink: rgb(12, 6, 0);
+    --bg-color-button: rgb(12, 6, 0);
+    --bg-color-text: rgb(253, 169, 80);
+    --bg-color-icon: url(../images/Logo_dark.png);
     .menu a{color: rgb(253, 169, 80);}
     .basement a{color: rgb(253, 169, 80);}
     p, ul, li{color: #ffffff;}

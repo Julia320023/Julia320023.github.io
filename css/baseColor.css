@@ -6,6 +6,9 @@
     --bg-color-yellowgreen: rgb(255, 255, 255, 0.8);
     --bg-color-purple: rgb(133, 159, 183);
     --bg-color-button: rgb(50, 96, 161);
+    --bg-color-text: rgb(0, 0, 0);
+    --bg-color-icon: url(../images/Logo_light.png);
+    --bg-color-stihia: rgb(255, 255, 255);
     .menu a{color: rgb(0, 0, 0);}
     .basement a{color: rgb(0, 0, 0);}
 }
@@ -17,6 +20,9 @@
     --bg-color-lightpink: rgb(5, 18, 46);
     --bg-color-yellowgreen: rgb(5, 18, 46, 0.95);
     --bg-color-button: rgb(5, 18, 46);
+    --bg-color-text: #fdff8f;
+    --bg-color-icon: url(../images/Logo_dark.png);
+    --bg-color-stihia: rgb(5, 18, 46);
     .menu a{color: #fdff8f;}
     .basement a{color: #fdff8f;}
     p, ul, li{color: #ffffff;}

@@ -6,17 +6,21 @@
     --bg-color-yellowgreen: rgba(255, 255, 255, 0.8);
     --bg-color-lightpink: rgb(4, 157, 20);
     --bg-color-button: rgb(4, 157, 20);
+    --bg-color-text: rgb(0, 0, 0);
+    --bg-color-icon: url(../images/Logo_light.png);
     .menu a{color: rgb(0, 0, 0);}
     .basement a{color: rgb(0, 0, 0);}
 }
 [dark] {
     --bg--image: url(../images/background/фон_дендро_ночь.jpg);
-    --bg-color: rgb(16, 48, 39);
-    --bg-color-orange: rgb(2, 32, 5);
-    --bg-color-purple: rgb(6, 58, 11);
-    --bg-color-yellowgreen: rgba(2, 32, 5, 0.9);
-    --bg-color-lightpink: rgb(2, 32, 5);
-    --bg-color-button: rgb(2, 32, 5);
+    --bg-color: rgb(1, 11, 2);
+    --bg-color-orange: rgb(1, 11, 2);
+    --bg-color-purple: rgb(1, 23, 4);
+    --bg-color-yellowgreen: rgba(1, 11, 2, 0.9);
+    --bg-color-lightpink: rgb(1, 11, 2);
+    --bg-color-button: rgb(1, 11, 2);
+    --bg-color-text: #8cff92;
+    --bg-color-icon: url(../images/Logo_dark.png);
     .menu a{color: #8cff92;}
     .basement a{color: #8cff92;}
     p, ul, li{color: rgb(255, 255, 255);}
