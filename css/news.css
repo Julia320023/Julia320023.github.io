@@ -1,7 +1,5 @@
 :root {
     --font-family-Lusi: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-    
 }
 
 
@@ -12,49 +10,15 @@
         background-size: 100% ;
         background-repeat:no-repeat;
         background-attachment: fixed ;
-        transition: .4s;
+        transition: .5s;
     }
     .container{ 
         display: grid;
         grid-template-columns: repeat(12, 1fr);/*грид 12 столюиков*/
     }
-    .stichia{
-        /*position:relative;*/
-        /*width: 82.5%;*/
-        background-color: var(--bg-color-stihia);
-        height: 70px;
-        text-align: center;
-    }
-    .stichia button{
-        height: 40px;
-        width: 100px;
-        margin: 15px 20px 0px 20px;
-        position: relative;
-        border: 0px;
-        border-radius: 10px;
-        background-color: var(--bg-color-purple);
-    }
-
-    
-    
-    
-    .picture{
-        text-align: center;/*размещение картинок в <p> с классом .picture в центре страницы(преимущ. листающиеся слайды)*/
-    }
-    
-    h1, h2, h3, p, ul, li{
-        font-family: var(--font-family-Lusi);/*шрифт и отступы для всех надписей*/
-        margin: 10px 20px 10px 20px;
-    }
-    h1{
-        text-align: center;/*заголовки h1 в центре*/
-    }
-    h2, h3{
-        margin-left: 30px;/*отступы в 30рх для заголовком поменьше*/
-    }
-    
-    
+    /*#region Дивы в контейнере*/   
     .logo{
+        z-index: 2;
         background-color: var(--bg-color-orange);/*расположение div с логотипом и названием*/
         height: 76px;
         width: 23%;
@@ -63,7 +27,24 @@
         margin-left: -0.7%;
 
     }
+    /*#region бургер меню*/
+    .burger-btn{
+        display: none;
+    }
+    .menu__list{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .menu__item{
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    /*#endregion*/
     .menu {
+        z-index: 2;
         background-color: var(--bg-color-purple);/*расположение div с меню*/
         height: 76px;
         width: 79%;
@@ -76,65 +57,83 @@
     .content {
         background-color: var(--bg-color-yellowgreen);/*расположение div с контентом страницы*/
         margin-top: 66px;
-        grid-column-start: 2;
-        grid-column-end: 12;
+        grid-column: 2/12;
     }
     .basement {
-        grid-column-start: 1;/*расположение div с сылками на официальные источники*/
-        grid-column-end: 13;
+        grid-column: 1/13;/*расположение div с сылками на официальные источники*/
         background-color: var(--bg-color-lightpink);
         height: 45px;
-        margin-bottom: -8px;
+        margin-bottom: -9px;
         margin-left: -8px;
         margin-right: -8px;
     }
+    /*#endregion*/
 
-    
+    /*#region кнопки стихий*/
+    .stichia{/*класс с кнопками для переключения стихий*/
+        /*position:relative;*/
+        /*width: 82.5%;*/
+        background-color: var(--bg-color-stihia);
+        height: 70px;
+        text-align: center;
+        z-index: 1;
+    }
+    .stichia button{/*стили кнопок для переключения стихий*/
+        height: 40px;
+        width: 100px;
+        margin: 15px 20px 0px 20px;
+        border-color: var(--bg-color-orange);
+        border-radius: 10px;
+        background-color: var(--bg-color-purple);
+        box-shadow: 0 0 10px var(--bg-color-purple);
+        cursor: pointer;
+    }
+    /*#endregion*/
 }
 
 
-
-
 @media (width < 1300px) and (width >= 960px){
-    button{
-        background-color: var(--bg-color-button);
-        float: right;
-        margin: -44px 10px 0px 0px;
-    }
-
     body{
         background-color: var(--bg-color);
         background-image: var(--bg--image);
-        background-size: auto 100% ;
+        background-size: 100% 100% ;
         background-repeat:no-repeat;
         background-attachment: fixed ;
         background-position-x: center;
     }
     .container{
-       
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .log{
-        float:left;
-        margin: 7px 7px 7px 0;
+
+    /*#region дивы в контейнере*/
+    /*#region бургер меню*/
+    .burger-btn{
+        display: none;
     }
-    img{
-        float:none;
-        margin: 10px 10px 10px 10px;
+    .menu__list{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
     }
-    h1, h2, h3, p, ul, li{
-        font-family: var(--font-family-Lusi);
-        margin: 10px 10px 10px 10px;
+    .menu__item{
+        margin-left: -10px;
+        margin-top: 2%;
     }
+    .menu__item:nth-child(1){
+        margin-left: 10px;
+        margin-top: 2%;
+    }
+    /*#endregion*/
     .logo{
         background-color: var(--bg-color-orange);
         height: 80px;
         position: fixed;
         width: 30%;
-        position: fixed;
         margin-top: -0.8%;
-        margin-left: -0.5%;
+        margin-left: -0.7%;
 
     }
     .menu {
@@ -144,32 +143,74 @@
         position: fixed;
         margin-top: -0.8%;
         margin-left: 29%;
-        margin-right: 1%;
+        margin-right: -0.7%;
     }
     
     .content {
-        margin-top: 71px;
+        margin-top: 69px;
         background-color: var(--bg-color-yellowgreen);
-        grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column: 1/4;
+        margin-left: -0.7%;
+        margin-right: -0.7%;
     }
     
     .basement {
         background-color: var(--bg-color-lightpink);
-        /*height: 80px;*/
-        grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column: 1/4;
+        margin-left: -0.7%;
+        margin-right: -0.7%;
+        margin-bottom: -0.8%;
     }
+    /*#endregion*/
     
+    /*#region оформление текста + картинки с классом picture + кнопки стихий*/
+    h1, h2, h3, p, ul, li{
+        font-family: var(--font-family-Lusi);
+        margin: 10px 20px 10px 10px;
+    }
+    p, ul, li{
+        font-size: 23px;
+    }
+    h1{
+        font-size: 35px;
+        text-align: center;/*заголовки h1 в центре*/
+    }
+    h2{
+        font-size: 30px;
+        margin-left: 30px;/*отступы в 30рх для заголовком поменьше*/
+    }
+    h3{
+        font-size: 25px;
+        margin-left: 30px;/*отступы в 30рх для заголовком поменьше*/
+    }
+
+    .picture{
+        text-align: center;/*размещение картинок в <p> с классом .picture в центре страницы(преимущ. листающиеся слайды)*/
+    }
+
+    .stichia{/*класс с кнопками для переключения стихий*/
+        background-color: var(--bg-color-stihia);
+        height: auto;
+        text-align: center;
+        z-index: 1;
+    }
+    .stichia button{/*стили кнопок для переключения стихий*/
+        height: 50px;
+        width: 120px;
+        margin: 15px 20px 15px 20px;
+        border-color: var(--bg-color-orange);
+        border-radius: 10px;
+        background-color: var(--bg-color-purple);
+        box-shadow: 0 0 10px var(--bg-color-purple);
+        cursor: pointer;
+    }
+    /*#endregion*/
 }
 
-@media (width < 960px){
-    button{
-        background-color: var(--bg-color-button);
-        float: right;
-        margin: -44px 10px 0px 0px;
-    }
 
+
+
+@media (width < 960px){
     body{
         background-color: var(--bg-color);
         background-image: var(--bg--image);
@@ -183,33 +224,129 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-    .log{
-        float:left;
-        margin: 7px 7px 7px 0;
+    /*#region дивы в контейнере*/
+
+    .logo {
+        z-index: 2;
+        position:fixed;
+        background-color: var(--bg-color-orange);
+        height: 80px;
+        width: 100%;
+        margin-left: -1%;
+        margin-top: -1%;
+        margin-right: -0.8%;
     }
-    img{
-        float:none;
-        margin: 10px 10px 10px 10px;
+    /*#region бургер меню*/
+    .burger-btn{
+        position: absolute;
+        width: 81px;
+        height: 81px;
+        border: none;
+        background-color: var(--bg-color-purple);
+        transition: transform .5s;
     }
+    .burger-btn span{
+        position: absolute;
+        width: 40px;
+        height: 6px;
+        background-color: var(--bg-color-text);
+        left: 10px;
+    }
+    .burger-btn span:nth-child(1){
+        transform: translateY(0px) rotate(45deg);
+    }
+    .burger-btn span:nth-child(2){
+        transform: translateX(25px) rotate(135deg);
+    }
+
+    .header.open .burger-btn span:nth-child(1){
+        transform: translateY(0px) rotate(135deg);
+    }
+    .header.open .burger-btn span:nth-child(2){
+        transform: translateX(25px) rotate(45deg);
+        
+    }
+    /*#endregion*/
+
+    .menu {
+        background-color: var(--bg-color-purple);
+        position: fixed;
+        left: 0px;
+        top: -500px;
+        width: 350px;
+        height: 470px;
+        padding: 80px 20px 20px 20px;
+        transition: transform .5s;
+    }
+    .menu__list{
+        display: block;
+        list-style-type: none;
+        margin-left: -40px;
+    }
+    .menu a{
+        display: block;
+        padding: 10px 0;
+    }
+
+    .header.open .menu{
+        transform: translateY(500px);
+    }
+    .content {
+        background-color: var(--bg-color-yellowgreen);
+        margin-left: -1%;
+        margin-right: -1%;
+    }
+    .basement {
+        background-color: var(--bg-color-lightpink);
+        margin-left: -1%;
+        margin-right: -1%;
+        margin-bottom: -1%;
+    }
+    /*#endregion*/
+    
+    
+    /*#region оформление текста + картинки с классом picture + кнопки стихий*/
     h1, h2, h3, p, ul, li{
         font-family: var(--font-family-Lusi);
         margin: 10px 10px 10px 10px;
     }
-    .menu {
+    p, ul, li{
+        font-size: 30px;
+    }
+    h1{
+        font-size: 37px;
+        text-align: center;/*заголовки h1 в центре*/
+    }
+    h2{
+        font-size: 35px;
+        margin-left: 20px;/*отступы в 30рх для заголовком поменьше*/
+    }
+    h3{
+        font-size: 32px;
+        margin-left: 33px;/*отступы в 30рх для заголовком поменьше*/
+    }
+
+    .picture{
+        text-align: center;/*размещение картинок в <p> с классом .picture в центре страницы(преимущ. листающиеся слайды)*/
+    }
+
+    .stichia{/*класс с кнопками для переключения стихий*/
+        background-color: var(--bg-color-stihia);
+        height: 170px;
+        text-align: center;
+        z-index: 1;
+    }
+    .stichia button{/*стили кнопок для переключения стихий*/
+        height: 60px;
+        width: 150px;
+        margin: 15px 20px 0px 20px;
+        border-color: var(--bg-color-orange);
+        border-radius: 10px;
         background-color: var(--bg-color-purple);
-        min-height: 80px;
-        
+        box-shadow: 0 0 10px var(--bg-color-purple);
+        cursor: pointer;
     }
-    .logo {
-        background-color: var(--bg-color-orange);
-        min-height: 80px;
-        
-    }
-    .basement {
-        background-color: var(--bg-color-lightpink);
-    }
-    .content {
-        background-color: var(--bg-color-yellowgreen);
-    }
+    /*#endregion*/
+    
     
 }

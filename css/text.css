@@ -8,14 +8,15 @@
 
 
 @media (width >= 1300px){
-    #tema{
+    
+    #tema{/*кнопка переключения темы*/
         background-color: var(--bg-color-button);
-        float: right;
-        margin: -36px 38px 0px 0px;
-        width: 50px;
-        height: 50px;
+        float: left;
+        margin: 10px 0px 0px 30px;
+        width: 55px;
+        height: 55px;
         border: 10px;
-        border-radius: 25px;
+        border-radius: 27px;
         box-shadow: 0 0 10px var(--bg-color-text);
         background-image: var(--bg-color-icon);
         background-repeat: no-repeat;
@@ -23,10 +24,7 @@
         cursor: pointer;
        }
 
-    .logo img{/*картинка логотипа*/
-        float: left;
-        margin: 7px 0px 7px 10px;
-    }
+    /*#region картинки на разбор*/
     .sign{/*расположение картинок регионов и персонажей*/
         float: inline-start;
         text-align: center;
@@ -58,6 +56,13 @@
         float:none;
         margin: 10px 10px 10px 10px;
     }
+    /*#endregion*/
+    
+
+    /*#region текст в дивах + картинки*/
+    .picture{
+        text-align: center;/*размещение картинок в <p> с классом .picture в центре страницы(преимущ. листающиеся слайды)*/
+    }
     .logo h1{
         margin-top: 5%;
     }
@@ -81,54 +86,106 @@
     body p{
         margin: 0px 100px 0px 100px;
     }
-    body li, body ul{
-        margin: 0px 30px 0px 30px;
+    li, ul{
+        margin: 0px 20px 0px 20px;
     }
+    /*#endregion*/
     
+    
+    /*#region кнопки для тестов*/
+    .test button{/*дизайн кнопок для тестов*/
+        height: 40px;
+        width: 150px;
+        margin: 15px 10px 0px 10px;
+        border-color: var(--bg-color-orange);
+        border-radius: 10px;
+        background-color: var(--bg-color-purple);
+        box-shadow: 0 0 10px var(--bg-color-purple);
+        cursor: pointer;
+    }
+    .test img{
+        height: 300px;
+        margin: 30px 0px 0px 0px;
+    }
+    .test figure{
+        margin: 30px 60px 30px 60px;
+        /*margin-left: 60px;
+        margin-right: 60px;*/
+        text-align: center;
+        box-shadow: 0 0 10px var(--bg-color-purple);
+        height: 450px;
+        width: 500px;
+        background-color: var(--bg-color-stihia);
+    }
+    .picture-test{
+        float:inline-start;
+    }
+    /*#endregion*/
 }
 
 
 
 
 @media (width < 1300px) and (width >= 960px){
-    .logo img{
+    #tema{/*кнопка переключения темы*/
+        background-color: var(--bg-color-button);
         float: left;
-        margin: 7px 0px 7px 10px;
-    }
-    .sign{
-        float: inline-start;
-    }
-    img{
-        float:none;
-        margin: 10px 10px 10px 10px;
-    }
+        margin: 15px 0px 0px 20px;
+        width: 50px;
+        height: 50px;
+        border: 10px;
+        border-radius: 25px;
+        box-shadow: 0 0 10px var(--bg-color-text);
+        background-image: var(--bg-color-icon);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        cursor: pointer;
+       }
+    
+       /*#region текст в дивах*/
     .logo h1{
         margin-top: 5%;
     }
     .menu p{
         margin-top: 2%;
     }
+    .basement p{
+        margin-top: 0.5%;
+    }
     h1, h2, h3, p, ul, li{
         font-family: var(--font-family-Lusi);
         margin: 10px 20px 10px 20px;
+        text-align: justify;
     }
     h1{
         text-align: center;
     }
     h2, h3{
-        margin-left: 30px;
+        margin-left: 50px;
     }
-    
+    body p{
+        margin: 0px 100px 0px 100px;
+    }
+    li, ul{
+        margin: 0px 30px 0px 30px;
+    }
+    /*#endregion*/
 }
 
 @media (width < 960px){
-    .logo img{
-        float: left;
-        margin: 7px 0px 7px 10px;
-    }
-    .log{
-        width: 60px;
-    }
+    #tema{/*кнопка переключения темы*/
+        background-color: var(--bg-color-button);
+        margin: 15px 0px 0px 85%;
+        width: 55px;
+        height: 55px;
+        border: 10px;
+        border-radius: 27px;
+        box-shadow: 0 0 10px var(--bg-color-text);
+        background-image: var(--bg-color-icon);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        cursor: pointer;
+       }
     .sign{
         float: inline-start;
     }
@@ -138,10 +195,9 @@
         
     }
     .logo h1{
-        margin-top: 5%;
-    }
-    .menu p{
-        margin-top: 2%;
+        text-align: center;
+        margin-top: -6%;
+        margin-left: -2%;
     }
     h1, h2, h3, p, ul, li{
         font-family: var(--font-family-Lusi);
