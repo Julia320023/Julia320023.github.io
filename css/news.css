@@ -157,7 +157,7 @@
         margin-top: 69px;
         background-color: var(--bg-color-yellowgreen);
         grid-column: 1/4;
-        margin-left: -0.7%;
+        margin-left: -1%;
         margin-right: -0.7%;
         height: auto;
     }
@@ -165,7 +165,7 @@
         margin-top: 69px;
         background-color: var(--bg-color-yellowgreen);
         grid-column: 1/4;
-        margin-left: -0.7%;
+        margin-left: -1%;
         margin-right: -0.7%;
         height: 750px;
     }
@@ -255,6 +255,7 @@
     }
     /*#region бургер меню*/
     .burger-btn{
+        margin-left: -1%;
         position: absolute;
         width: 81px;
         height: 81px;
