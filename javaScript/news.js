@@ -10,5 +10,5 @@ function showSlides() {
         slideIndex = 1;
     }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Изменяет изображение каждые 2 секунды
+    setTimeout(showSlides, 2000); // Изменяет изображение каждые 2 секунды
 }

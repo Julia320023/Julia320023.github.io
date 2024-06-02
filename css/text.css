@@ -37,10 +37,6 @@
         float: inline-start;
         text-align: left;
     }
-    .sign{/*расположение картинок регионов*/
-        float: inline-start;
-        text-align: center;
-    }
     .sign2{/*расположение картинок персонажей*/
         float: inline-start;
         text-align: center;
@@ -102,6 +98,7 @@
         background-color: var(--bg-color-purple);
         box-shadow: 0 0 10px var(--bg-color-purple);
         cursor: pointer;
+        color: var(--bg-color-p);
     }
     .test img{
         height: 300px;
@@ -118,9 +115,20 @@
         background-color: var(--bg-color-stihia);
     }
     .picture-test{
-        float:inline-start;
+        float: inline-start;
+    }
+    .test h3, p{
+        text-align: center;
+        margin: 0;
     }
     /*#endregion*/
+    
+    .basement a, .menu a, h1, h2, h3, h4{
+        color: var(--bg-color-text);
+    }
+    p, ul, li{
+        color: var(--bg-color-p);
+    }
 }
 
 
@@ -142,12 +150,17 @@
         cursor: pointer;
        }
     
-       /*#region текст в дивах*/
+    /*#region текст в дивах*/
+    .sign{/*расположение картинок регионов и персонажей*/
+        float: inline-start;
+        text-align: center;
+        margin-left: 5%;
+    }
+    .sign h2{
+        text-align: center;
+    }
     .logo h1{
         margin-top: 5%;
-    }
-    .menu p{
-        margin-top: 2%;
     }
     .basement p{
         margin-top: 0.5%;
@@ -170,12 +183,43 @@
         margin: 0px 30px 0px 30px;
     }
     /*#endregion*/
+    /*#region кнопки для тестов*/
+    .picture-test button{/*дизайн кнопок для тестов*/
+        height: 40px;
+        width: 150px;
+        margin: 0px 10px 15px 10px;
+        border-color: var(--bg-color-orange);
+        border-radius: 10px;
+        background-color: var(--bg-color-purple);
+        box-shadow: 0 0 10px var(--bg-color-purple);
+    }
+    .test p, h3{
+        text-align: center;
+        margin: 0;
+    }
+    .test img{
+        height: 300px;
+        margin: 30px 0px 0px 0px;
+    }
+    .test figure{
+        margin-left: 10%;
+        margin-right: 10%;
+        /*margin-left: 60px;
+        margin-right: 60px;*/
+        text-align: center;
+        box-shadow: 0 0 10px var(--bg-color-purple);
+        height: auto;
+        width: auto;
+        margin-bottom: 20px;
+        background-color: var(--bg-color-stihia);
+    }
+    /*#endregion*/
 }
 
 @media (width < 960px){
     #tema{/*кнопка переключения темы*/
         background-color: var(--bg-color-button);
-        margin: 15px 0px 0px 85%;
+        margin: 17px 0px 0px 85%;
         width: 55px;
         height: 55px;
         border: 10px;
@@ -187,7 +231,7 @@
         cursor: pointer;
        }
     .sign{
-        float: inline-start;
+        text-align: center;
     }
     img{
         float:none;
@@ -209,5 +253,34 @@
     h2, h3{
         margin-left: 30px;
     }
-    
+    /*#region кнопки для тестов*/
+    .picture-test button{/*дизайн кнопок для тестов*/
+        height: 40px;
+        width: 150px;
+        margin: 0px 10px 15px 10px;
+        border-color: var(--bg-color-orange);
+        border-radius: 10px;
+        background-color: var(--bg-color-purple);
+        box-shadow: 0 0 10px var(--bg-color-purple);
+    }
+    .test img{
+        height: 300px;
+        margin: 30px 0px 0px 0px;
+    }
+    .test figure{
+        margin: 10px 20px 10px 20px;
+        /*margin-left: 60px;
+        margin-right: 60px;*/
+        text-align: center;
+        box-shadow: 0 0 10px var(--bg-color-purple);
+        height: auto;
+        width: auto;
+        margin-bottom: 20px;
+        background-color: var(--bg-color-stihia);
+    }
+    .test p, h3{
+        text-align: center;
+        margin: 0;
+    }
+    /*#endregion*/
 }

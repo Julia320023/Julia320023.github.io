@@ -8,8 +8,7 @@
     --bg-color-button: rgb(39, 161, 241);
     --bg-color-text: rgb(0, 0, 0);
     --bg-color-icon: url(../images/Logo_light.png);
-    .menu a{color: rgb(0, 0, 0);}
-    .basement a{color: rgb(0, 0, 0);}
+    --bg-color-p:#000000;
 }
 [dark] {
     --bg--image: url(../images/background/фон_гидро_ночь.jpg);
@@ -21,8 +20,5 @@
     --bg-color-button: rgb(4, 6, 19);
     --bg-color-text: rgb(95, 194, 255);
     --bg-color-icon: url(../images/Logo_dark.png);
-    .menu a{color: rgb(95, 194, 255);}
-    .basement a{color: rgb(95, 194, 255);}
-    p, ul, li{color: rgb(255, 255, 255);}
-    h1, h2, h3, h4{color: rgb(95, 194, 255);}
+    --bg-color-p:#ffffff;
 }

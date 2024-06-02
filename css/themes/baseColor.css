@@ -9,8 +9,11 @@
     --bg-color-text: rgb(0, 0, 0);
     --bg-color-icon: url(../images/Logo_light.png);
     --bg-color-stihia: rgb(255, 255, 255);
-    .menu a{color: rgb(0, 0, 0);}
-    .basement a{color: rgb(0, 0, 0);}
+    --bg-color-p:#000000;
+    --bg-color-answer-v: #7e7e7e;
+    --bg-color-answer:rgb(50, 96, 161);
+    /*.menu a{color: rgb(0, 0, 0);}
+    .basement a{color: rgb(0, 0, 0);}*/
 }
 [dark] {
     --bg--image: url(../images/background/фон_ночь.png);
@@ -23,8 +26,11 @@
     --bg-color-text: #fdff8f;
     --bg-color-icon: url(../images/Logo_dark.png);
     --bg-color-stihia: rgb(5, 18, 46);
-    .menu a{color: #fdff8f;}
+    --bg-color-p:#ffffff;
+    --bg-color-answer-v: rgb(27, 52, 106);
+    --bg-color-answer:#fdff8f;
+    /*.menu a{color: #fdff8f;}
     .basement a{color: #fdff8f;}
     p, ul, li{color: #ffffff;}
-    h1, h2, h3, h4{color: #fbff88;}
+    h1, h2, h3, h4{color: #fbff88;} */
 }

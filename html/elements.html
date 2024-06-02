@@ -6,7 +6,7 @@
 	<title>Стихии</title>
 	<link rel="stylesheet" media="screen" type="text/css" href="../css/news.css">
     <link rel="stylesheet" media="screen" type="text/css" href="../css/text.css">
-    <link rel="stylesheet" media="screen" type="text/css" href="../css/themes/baseColor.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="../css/themes/baseColor.css" id="theme">
 </head>
 <body>
     <div class="container">
@@ -46,13 +46,13 @@
         
         <div class="content">
             <div class="stichia">
-                <button value="anemo">Анемо</button>
-                <button value="geo">Гео</button>
-                <button value="electro">Электро</button>
-                <button value="dendro">Дендро</button>
-                <button value="hydro">Гидро</button>
-                <button value="pyro">Пиро</button>
-                <button value="crio">Крио</button>
+                <button class="switch" id="switch1">Анемо</button>
+                <button class="switch" id="switch2">Гео</button>
+                <button class="switch" id="switch3">Электро</button>
+                <button class="switch" id="switch4">Дендро</button>
+                <button class="switch" id="switch5">Гидро</button>
+                <button class="switch" id="switch6">Пиро</button>
+                <button class="switch" id="switch7">Крио</button>
                 
             </div>
             <p><!--выделить-->Элементы — особые эффекты статуса и типы урона, которые могут накладываться в определённых порядках для запуска элементальных реакций.</p>
@@ -81,6 +81,7 @@
 
     <script src="../javaScript/Dark-light_tema.js"></script>
     <script defer src="../javaScript/burger.js"></script>
+    <script defer src="../javaScript/elements.js"></script>
 </body>
 
 </html>
