@@ -314,7 +314,7 @@ const renderResults = () =>{
     if(cnt >= 4 && cnt <= 6){
         content += `
             <div class="quiz-results-item">
-                <div class="quiz-results-item_question"><img src="../images/персонажи/1Рейзор_выпадение.webp" alt="picture"></div>
+                <div class="quiz-results-item_question"><h1>${cnt}/${DATA.length}</h1><img src="../images/персонажи/1Рейзор_выпадение.webp" alt="picture"></div>
                 <p class="quiz-results-item_answers">Вы неплохо справились, возможно вы как и Рейзор плохо умеете читать, поэтому запомнили не все.</p>
             </div>
         `;
@@ -322,7 +322,7 @@ const renderResults = () =>{
     if(cnt > 6){
         content += `
             <div class="quiz-results-item">
-            <div class="quiz-results-item_question"><img src="../images/персонажи/8Нахида_выпадение.webp" alt="picture"></div>
+            <div class="quiz-results-item_question"><h1>${cnt}/${DATA.length}</h1><img src="../images/персонажи/8Нахида_выпадение.webp" alt="picture"></div>
             <p class="quiz-results-item_answers">У вас великолепная память, по уму вас можно сравнить только с Нихидой - малой властительницей Кусанали, архонтом мудрости.</p>
             </div>
         `;
