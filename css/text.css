@@ -129,6 +129,16 @@
     p, ul, li{
         color: var(--bg-color-p);
     }
+    .picture img{
+        width: 750px;
+    }
+    .chetireStar, .fiveStar{/*расположение картинок персонажей*/
+        float: left;
+    }
+    .sign img{
+        width: 450px;
+        height: 250px;
+    }
 }
 
 
@@ -220,6 +230,13 @@
         background-color: var(--bg-color-stihia);
     }
     /*#endregion*/
+    .picture img{
+        width: 550px;
+    }
+    .sign img{
+        width: 350px;
+        height: 200px;
+    }
 }
 
 @media (width < 960px){
@@ -238,6 +255,9 @@
        }
     .sign{
         text-align: center;
+    }
+    .sign img{
+        width: 250px;
     }
     img{
         float:none;
@@ -295,4 +315,10 @@
         margin: 0;
     }
     /*#endregion*/
+    .picture img{
+        width: 450px;
+    }
+    .chetireStar, .fiveStar{/*расположение картинок персонажей*/
+        text-align: center;
+    }
 }
