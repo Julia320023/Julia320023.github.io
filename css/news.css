@@ -59,6 +59,12 @@
         margin-top: 66px;
         grid-column: 2/12;
     }
+    .content--tt{
+        background-color: var(--bg-color-yellowgreen);/*расположение div с контентом страницы*/
+        margin-top: 66px;
+        grid-column: 2/12;
+        height: 800px;
+    }
     .basement {
         grid-column: 1/13;/*расположение div с сылками на официальные источники*/
         background-color: var(--bg-color-lightpink);
@@ -154,6 +160,14 @@
         margin-left: -0.7%;
         margin-right: -0.7%;
         height: auto;
+    }
+    .content--tt {
+        margin-top: 69px;
+        background-color: var(--bg-color-yellowgreen);
+        grid-column: 1/4;
+        margin-left: -0.7%;
+        margin-right: -0.7%;
+        height: 750px;
     }
     
     .basement {
@@ -299,6 +313,13 @@
         margin-left: -1%;
         margin-right: -1%;
         margin-top: 67px;
+    }
+    .content--tt {
+        background-color: var(--bg-color-yellowgreen);
+        margin-left: -1%;
+        margin-right: -1%;
+        margin-top: 67px;
+        height: 850px;
     }
     .basement {
         background-color: var(--bg-color-lightpink);

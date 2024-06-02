@@ -49,7 +49,7 @@ const DATA = [
             }
         ]
     },
-
+    
     {//В3: Как называются стихии в Genshin Impact?
         question: 'Как называются стихии в Genshin Impact?',
         answers: [
@@ -287,46 +287,33 @@ const renderQuestions = (index) =>{
     </div>
     `;
 };
+
 const renderResults = () =>{
     let content = '';
-    let cnt = 0;
 
+    const getClassname = (answer, questionIndex) =>{
+        let classname = '';
 
-    for(let i = 0; i < DATA.length; i++){//подсчет правильных ответов
-        for(let u = 0; u < DATA[i].answers.length; u++){
-            if (DATA[i].answers[u].correct && DATA[i].answers[u].id == localResults[i]) {
-                cnt++;
-            }
+        if (!answer.correct && answer.id == localResults[questionIndex]) {
+            classname = 'answer--invalid';
+        } else if(answer.correct){
+            classname = 'answer--valid';
         }
-    }
+        return classname;
+    };
 
-    if(cnt < 4){
+    const getAnswers = (questionIndex) =>  DATA[questionIndex].answers // перебор ответы
+    .map((answer) => `<li class=${getClassname(answer, questionIndex)}>${answer.value}</li>`)
+    .join('');
+
+    DATA.forEach((question, index) => {
         content += `
             <div class="quiz-results-item">
-                <div class="quiz-results-item_question">
-                    <h1>${cnt}/${DATA.length}</h1>
-                    <img src="../images/персонажи/12ЦиЦи_выпадение.webp" alt="picture">
-                </div>
-                <p class="quiz-results-item_answers">Ничего страшного, что вы знаете так мало. Ци Ци тоже постоянно все забывает и носит с собой блокнотик чтобы вести записи, хотя иногда она забывает и о блокноте.</p>
+                <div class="quiz-results-item_question">${question.question}</div>
+                <ul class="quiz-results-item_answers">${getAnswers(index)}</ul>
             </div>
         `;
-    }
-    if(cnt >= 4 && cnt <= 6){
-        content += `
-            <div class="quiz-results-item">
-                <div class="quiz-results-item_question"><img src="../images/персонажи/1Рейзор_выпадение.webp" alt="picture"></div>
-                <p class="quiz-results-item_answers">Вы неплохо справились, возможно вы как и Рейзор плохо умеете читать, поэтому запомнили не все.</p>
-            </div>
-        `;
-    }
-    if(cnt > 6){
-        content += `
-            <div class="quiz-results-item">
-            <div class="quiz-results-item_question"><img src="../images/персонажи/8Нахида_выпадение.webp" alt="picture"></div>
-            <p class="quiz-results-item_answers">У вас великолепная память, по уму вас можно сравнить только с Нихидой - малой властительницей Кусанали, архонтом мудрости.</p>
-            </div>
-        `;
-    }
+    });
 
     results.innerHTML = content;
 };
@@ -337,11 +324,9 @@ const renderIndecator = (currentStep) =>{
 
 quiz.addEventListener('change', (event) => {
     // логика ответа
-
     if(event.target.classList.contains('answer-input')) {
         localResults[event.target.name] = event.target.value;
         btnNext.disabled = false; //включает кнопку 'далее'
-
     }
 });
 
