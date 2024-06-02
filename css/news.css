@@ -329,27 +329,6 @@
         margin-bottom: -1%;
     }
 
-    /*#region кнопки стихий*/
-    .stichia{/*класс с кнопками для переключения стихий*/
-        background-color: var(--bg-color-stihia);
-        height: 70px;
-        text-align: center;
-        z-index: 1;
-        height: 100%;
-    }
-    .stichia button{/*стили кнопок для переключения стихий*/
-        height: auto;
-        width: 100px;
-        margin: 15px 20px 0px 20px;
-        border-color: var(--bg-color-orange);
-        border-radius: 15px;
-        background-color: var(--bg-color-purple);
-        box-shadow: 0 0 10px var(--bg-color-purple);
-        cursor: pointer;
-        color: var(--bg-color-p);
-    }
-    /*#endregion*/
-
     /*#endregion*/
     
     
@@ -380,7 +359,7 @@
 
     .stichia{/*класс с кнопками для переключения стихий*/
         background-color: var(--bg-color-stihia);
-        height: 170px;
+        height: 340px;
         text-align: center;
         z-index: 1;
     }
