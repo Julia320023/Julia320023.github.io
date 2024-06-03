@@ -17,6 +17,7 @@
     font-size: 120%;
     margin-bottom: 20px;
     margin-top: 20px;
+    color: var(--bg-color-text);
 }
 .quiz-questions-item_answers, .quiz-results-item_answers{
     margin: 0;
@@ -34,6 +35,7 @@
 .quiz-indicator{
     margin-bottom: 20px;
     text-align: center;
+    color: var(--bg-color-p);
 }
 
 .btn-next, .btn-restart{
@@ -44,6 +46,7 @@
         border-radius: 10px;
         background-color: var(--bg-color-purple);
         box-shadow: 0 0 10px var(--bg-color-purple);
+        color: var(--bg-color-p);
 }
 .btn-restart{
     float: inline-end;

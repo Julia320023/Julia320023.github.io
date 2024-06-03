@@ -237,9 +237,15 @@
         width: 350px;
         height: 200px;
     }
+    .story{
+        color: var(--bg-color-p);
+    }
 }
 
 @media (width < 960px){
+    .story{
+        color: var(--bg-color-p);
+    }
     #tema{/*кнопка переключения темы*/
         background-color: var(--bg-color-button);
         margin: 17px 0px 0px 85%;

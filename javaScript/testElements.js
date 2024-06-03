@@ -302,13 +302,13 @@ const renderResults = () =>{
 
     if(cnt < 4){
         content += `
-            <div class="quiz-results-item">
-                <div class="quiz-results-item_question">
-                    <h1>${cnt}/${DATA.length}</h1>
-                    <img src="../images/персонажи/12ЦиЦи_выпадение.webp" alt="picture">
-                </div>
-                <p class="quiz-results-item_answers">Ничего страшного, что вы знаете так мало. Ци Ци тоже постоянно все забывает и носит с собой блокнотик чтобы вести записи, хотя иногда она забывает и о блокноте.</p>
+        <div class="quiz-results-item">
+            <div class="quiz-results-item_question">
+                <h1>${cnt}/${DATA.length}</h1>
+                <img src="../images/персонажи/12ЦиЦи_выпадение.webp" alt="picture">
             </div>
+            <p class="quiz-results-item_answers">Ничего страшного, что вы знаете так мало. Ци Ци тоже постоянно все забывает и носит с собой блокнотик чтобы вести записи, хотя иногда она забывает и о блокноте.</p>
+        </div>
         `;
     }
     if(cnt >= 4 && cnt <= 6){
