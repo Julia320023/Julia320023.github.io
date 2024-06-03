@@ -277,7 +277,7 @@
     }
     h1, h2, h3, p, ul, li{
         font-family: var(--font-family-Lusi);
-        margin: 10px 20px 10px 20px;
+        margin: 5px 10px 5px 10px;
     }
     h1{
         text-align: center;
@@ -322,7 +322,7 @@
     }
     /*#endregion*/
     .picture img{
-        width: 450px;
+        width: 350px;
     }
     .chetireStar, .fiveStar{/*расположение картинок персонажей*/
         text-align: center;
