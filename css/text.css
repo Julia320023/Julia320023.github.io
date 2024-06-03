@@ -128,6 +128,7 @@
     }
     p, ul, li{
         color: var(--bg-color-p);
+        text-align: justify;
     }
     .picture img{
         width: 750px;
@@ -138,6 +139,9 @@
     .sign img{
         width: 450px;
         height: 250px;
+    }
+    .sign10 img{
+        width: 450px;
     }
 }
 
@@ -240,6 +244,9 @@
     .story{
         color: var(--bg-color-p);
     }
+    .sign10 img{
+        width: 350px;
+    }
 }
 
 @media (width < 960px){
@@ -326,5 +333,8 @@
     }
     .chetireStar, .fiveStar{/*расположение картинок персонажей*/
         text-align: center;
+    }
+    .sign10 img{
+        width: 250px;
     }
 }
