@@ -247,6 +247,18 @@
     .sign10 img{
         width: 350px;
     }
+    .fiveStar, .chetireStar{
+        float: left;
+        text-align: center;
+    }
+    .sign2{/*расположение картинок персонажей*/
+        float: inline-start;
+        text-align: center;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (width < 960px){
